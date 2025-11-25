@@ -1,99 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aegis bank</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aegis bank</title>
-  <link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <nav>
-      <a class="header__link" href="#">
-        <img class="header__logo" src="icons/AEGIS.svg" alt="Logo">
-      </a>
-      <div class="nav__pages">
-        <a href="#">Solutions streamers</a>
-        <a href="#">Finacement creatifs</a>
-        <a href="#">Ecosysteme pro</a>
-      </div>
-      <div class="header__btn__container">
-        <a class="header__btn--style">Log</a>
-        <a class="header__btn--style">Sub</a>
-      </div>
-      <img class="header__burger" src="icons/burger-white.svg" alt="Menu burger">
-
-    </nav>
-  </header>
-  <main>
-
-    <!-- container for flipping between multiple words in H1  -->
-
-    <div class="flip-container">
-      la néobanque
-      <div class="flip">
-        <div>
-          <div>éthique</div>
+  <body>
+    <header>
+      <nav>
+        <a class="header__link" href="#">
+          <img class="header__logo" src="icons/AEGIS.svg" alt="Logo" />
+        </a>
+        <div class="nav__pages">
+          <a href="#">Solutions streamers</a>
+          <a href="#">Finacement creatifs</a>
+          <a href="#">Ecosysteme pro</a>
         </div>
+        <div class="header__btn__container">
+          <a href="#" class="header__btn--style">Log</a>
+          <a href="#" class="header__btn--style">Sub</a>
+        </div>
+        <img
+          class="header__burger"
+          src="icons/burger-white.svg"
+          alt="Menu burger"
+        />
+      </nav>
+    </header>
+    <main>
+      <!-- container for flipping between multiple words in H1  -->
 
-        <div>
+      <div class="flip-container">
+        la néobanque
+        <div class="flip">
           <div>
-            transparente
+            <div>éthique</div>
+          </div>
+
+          <div>
+            <div>transparente</div>
+          </div>
+
+          <div>
+            <div>responsable</div>
           </div>
         </div>
+      </div>
 
-        <div>
-          <div>
-            responsable
-          </div>
+      <!-- Description text after title -->
+
+      <h2 class="main__sous-titre">
+        <span class="offset-header">
+          <span>Une néobanque éthique et transparente,</span>
+        </span>
+        <span class="offset-header">
+          <span>qui place vos valeurs au coeur de la finance,</span>
+        </span>
+        <span class="offset-header">
+          <span>pour un futur plus responsable et durable.</span>
+        </span>
+      </h2>
+
+      <!-- Promotionnal card -->
+
+      <div class="main__card border_anim">
+        <img
+          class="main__card__img"
+          src="img/debit-card-svgrepo-com.svg"
+          alt="card"
+        />
+        <h2 class="main__card__text">
+          20$ offert <br />
+          Mars 2026
+        </h2>
+      </div>
+
+      <!--  CTA  -->
+
+      <a class="main__cta gelatine" href="#">Telecharger l'app</a>
+
+      <!-- Footer with links and RGPD  -->
+
+      <footer>
+        <div class="footer__media">
+          <a target="_blank" href="https://bsky.app/"
+            ><img class="footer__icon" src="icons/bluesky.svg" alt="Bluesky"
+          /></a>
+          <a target="_blank" href="https://web.telegram.org/a/"
+            ><img class="footer__icon" src="icons/telegram.svg" alt="Telegram"
+          /></a>
+          <a href="https://discord.com/"
+            ><img class="footer__icon" src="icons/Vector.svg" alt="Discord"
+          /></a>
         </div>
-      </div>
-    </div>
-
-    <!-- Description text after title -->
-
-    <h2 class="main__sous-titre">
-      <span class="offset-header">
-        <span>Une néobanque éthique et transparente,</span>
-      </span>
-      <span class="offset-header">
-        <span>qui place vos valeurs au coeur de la finance,</span>
-      </span>
-      <span class="offset-header">
-        <span>pour un futur plus responsable et durable.</span>
-      </span>
-    </h2>
-
-    <!-- Promotionnal card -->
-
-    <div class="main__card border_anim">
-      <img class="main__card__img" src="img/debit-card-svgrepo-com.svg" alt="card">
-      <h2 class="main__card__text">20$ offert <br> Mars 2026</h2>
-    </div>
-
-    <!--  CTA  -->
-
-    <a class="main__cta gelatine" href="#">Telecharger
-      l'app</a>
-
-    <!-- Footer with links and RGPD  -->
-
-    <footer>
-      <div class="footer__media">
-        <a target="_blank" href="https://bsky.app/"><img class="footer__icon" src="icons/bluesky.svg" alt="Bluesky"></a>
-        <a target="_blank" href="https://web.telegram.org/a/"><img class="footer__icon" src="icons/telegram.svg"
-            alt="Telegram"></a>
-        <a href="https://discord.com/"><img class="footer__icon" src="icons/Vector.svg" alt="Discord"></a>
-      </div>
-      <p class="footer__rgpd"><a href="">Droit des utilisateurs</a>
-        <a href="">Avis de confidentialite</a>
-      </p>
-    </footer>
-  </main>
-
-
-</body>
-
+        <p class="footer__rgpd">
+          <a href="">Droit des utilisateurs</a>
+          <a href="">Avis de confidentialite</a>
+        </p>
+      </footer>
+    </main>
+  </body>
 </html>

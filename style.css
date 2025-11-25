@@ -1,25 +1,22 @@
 @import "css/colors.css";
 @import "css/animations.css";
 @import "css/fonts.css";
+@import "css/media.css";
 
 /* CSS Reset */
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   display: flex;
-  flex-flow: column nowrap ;
+  flex-flow: column nowrap;
   height: 100vh;
 }
 
-
-
 /* Header Blocks */
-
 
 header {
   background-color: var(--main-background-color);
@@ -30,15 +27,15 @@ header {
   font-family: var(--font-main);
 }
 
-nav{
+nav {
   display: flex;
-  flex-flow: row nowrap ;
+  flex-flow: row nowrap;
   width: 100vw;
   height: 5rem;
   justify-content: space-between;
 }
 
-.nav__pages{
+.nav__pages {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -50,23 +47,26 @@ nav{
   font-size: 1.618rem;
 }
 
-.nav__pages a{
+.nav__pages a {
   text-decoration: none;
   color: white;
   font-family: var(--font-main);
   font-size: 1.5rem;
 }
 
-.header__logo{
-width: 6rem;
-height: auto;
+.nav__pages a:hover {
+  color: var(--accent-color);
+  transition: color 0.3s linear;
 }
 
+.header__logo {
+  width: 6rem;
+  height: auto;
+}
 
 .header__link {
   margin-top: 1.5rem;
 }
-
 
 .header__btn__container {
   border: none;
@@ -77,6 +77,13 @@ height: auto;
   text-decoration: none;
   width: 8rem;
   font-size: 1rem;
+}
+
+.header__btn__container a:hover {
+  color: var(--accent-color);
+  transition: color 0.3s linear;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .header__btn--style {
@@ -96,7 +103,7 @@ main {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  /* min-height: calc(100vh - 5rem);   */ 
+  /* min-height: calc(100vh - 5rem);   */
   height: 100%;
 }
 
@@ -109,16 +116,9 @@ main {
 }
 
 .main__sous-titre {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* text-align: center; */
-  /* padding-top: 110px; */
-  /* padding-left: 1rem; */
-  /* padding-right: 1rem; */ 
-
   display: block;
   overflow: hidden;
-  font-size: 1.618rem;
+  font-size: 1.3rem;
   text-align: center;
   padding-top: 110px;
   padding-left: 1rem;
@@ -126,7 +126,6 @@ main {
   padding-bottom: 1rem;
   font-family: var(--font-main);
 }
-
 
 .main__card {
   display: flex;
@@ -171,7 +170,6 @@ main {
   font-family: var(--font-accent);
 }
 
-
 main,
 a {
   text-decoration: none;
@@ -202,16 +200,4 @@ footer {
   font-size: 0.5rem;
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-
-@media screen and (min-width: 1500px) {
-  .header__burger{
-    display: none;
-  } 
-}
-
-@media screen and (max-width: 1500px) {
-  .nav__pages{
-    display: none;
-  }
 }

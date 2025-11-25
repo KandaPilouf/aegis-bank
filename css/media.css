@@ -1,0 +1,27 @@
+:root {
+  @media screen and (max-width: 400px) {
+    .main__sous-titre {
+      font-size: 1rem !important;
+    }
+
+    .footer__media {
+      margin: 1rem !important;
+    }
+
+    .main__card {
+      height: 15rem !important;
+    }
+  }
+
+  @media screen and (min-width: 1500px) {
+    .header__burger {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    .nav__pages {
+      display: none;
+    }
+  }
+}
