@@ -1,13 +1,13 @@
 # Aegis Neo Bank – Mobile Hero Page
 
-A mobile-first hero page for the Aegis Neo Bank project. Built as part of my web development training.
+Voici la HERO page pour AEGIS Neo Bank project. Développer en mobile-first et en pure HTML et CSS.
 
-## Features
+## Caractéristique 
 - Mobile-first layout
 - Clean, modern hero section
 - Responsive
 
-## Tech Stack
+## Tech
 - HTML5  
 - CSS 
 
